@@ -5,11 +5,6 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         public IActionResult DownloadFile1(string fileName)
         {
             var filePath = Path.Combine(webHostEnvironment.WebRootPath, fileName);
